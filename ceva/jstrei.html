@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .fontceva{
+            font-family: fantasy;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>functii</h1>
+
+    <img src="https://cdn.britannica.com/25/172925-050-DC7E2298/black-cat-back.jpg"       
+        width="200px" height="200px"
+        id="imagine1" />
+    <button onclick="ceva14()">da click</button>
+
+    <p id="paragraf" class="fontceva">paragraf</p>
+
+    <button onclick="functie2()">click</button>
+
+    <button onclick="clasa1()">clasa</button>
+
+    <script>
+
+        function clasa1() {
+            const paragraf = document.getElementById("paragraf");
+            paragraf.classList.toggle("fontceva");
+        }
+
+        function ceva14() {
+            const img = document.getElementById("imagine1");
+            img.src = "https://romanialibera.ro/wp-content/uploads/2021/07/769481-1624406400-boo-cel-mai-dragut-caine-din-lume-a-murit-la-varsta-de-12-ani.jpg";
+        }
+
+        function functie2() {
+            const paragraf = document.getElementById("paragraf");
+            paragraf.style.color = "red";
+            paragraf.style.backgroundColor = "yellow";
+            paragraf.style.fontSize = "30px";
+        }
+
+    </script>
+</body>
+
+</html>

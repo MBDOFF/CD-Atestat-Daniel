@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>formular</h1>
+    <input type="text" id="nume" placeholder="nume" />
+    <input type="text" id="prenume" placeholder="prenume" />
+    <input type="text" id="email" placeholder="email" />
+
+    <button onclick="submit()">submit</button>
+    <p id="rezultat"></p>
+
+    <script>
+
+        function submit() {
+            const nume = document.getElementById("nume");
+            const prenume = document.getElementById("prenume");
+            const email = document.getElementById("email");
+            const rezultat = document.getElementById("rezultat");
+
+            rezultat.innerHTML = email.value + ' ' + nume.value + ' ' + prenume.value;
+        }
+
+    </script>
+</body>
+
+</html>

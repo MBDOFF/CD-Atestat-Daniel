@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghiceste numarul</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="numar" placeholder="introdu numarul" />
+        <button onclick="ghiceste()">ghiceste</button>
+        <p id="rezultat"></p>
+    </form>
+
+    <script>
+        function ghiceste() {
+            const numar = document.getElementById("numar").value;
+            const rezultat = document.getElementById("rezultat");
+            num_gen = Math.floor(Math.random() * 10) + 1;
+
+            if ( numar == num_gen ){
+                rezultat.innerHTML = "ai ghicit";
+            } else {
+                rezultat.innerHTML = "mai incearca";
+            }
+            
+        }
+
+
+    </script>
+</body>
+</html>
